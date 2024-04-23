@@ -8,14 +8,27 @@
 const express = require('express');
 
 // Constants
+// Die anweisungen werden von oben nach unten abgearbeitet. DEr  Wert 3000 wird von rechts nach links zugewiesen an die Konstante Namens Port. DAs einfache gleichheits Zeichen lässt sich also übeersetzen mit wird zugewiesen an.
 const PORT = 3000;
+
+//DER Wert`.0.0.0.0´ wird zugewiesen an die Kostante Namens HOST
 const HOST = '0.0.0.0';
 
 // App
 const app = express();
 app.get('/', (req, res) => {
+	
+	// Res ist dei antwort des servers an den Browser. 
+	//send() ist die anweisung etwas an den Browser zu senden
+	//Helllo..... ist der wert der an die Anweisung send() übergeben wird
+
+	
 	res.send('Hello remote world!\n');
 });
 
+
+// MIt listen wird der server angewiesen , Auf den angegebenen Host un d Port zu lauschen
 app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+
+// Mit der Anweeisung Konsole.log() Wird dem Server Administrator auf der Konsole angezeigt, waa der server macht.  Der Programmierer sxchreibt dazu in die runden Klammern  den ausdruck den ausdruck,  der auf konsole angezeigt werden soll. die werte der beiden Konstaten Host und port werden in den Ausdruck übergeben. ein Verb mit anschliessenden klammer steht immer für eine Anweisung etwas zu tun.
+console.log(`Running on http://${HOST}:${PORT}`);7
