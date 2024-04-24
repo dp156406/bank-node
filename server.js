@@ -23,12 +23,14 @@ app.get('/', (req, res) => {
 	//Helllo..... ist der wert der an die Anweisung send() übergeben wird
 
 	
-	res.send('Hello remote world!\n');
+	//res.send('Hello remote world!\n');
+// Das res-Objekt kann noch mehr als nur eine Zeichenkette an den Browser zu senden. Das res Objekt kann mit der Funktion render , eine HTML an den Browser senden.
+ res.render("index.ejs",{});
 });
 
 
-// MIt listen wird der server angewiesen , Auf den angegebenen Host un d Port zu lauschen
+// Mit listen wird der server angewiesen , Auf den angegebenen Host un d Port zu lauschen
 app.listen(PORT, HOST);
 
 // Mit der Anweeisung Konsole.log() Wird dem Server Administrator auf der Konsole angezeigt, waa der server macht.  Der Programmierer sxchreibt dazu in die runden Klammern  den ausdruck den ausdruck,  der auf konsole angezeigt werden soll. die werte der beiden Konstaten Host und port werden in den Ausdruck übergeben. ein Verb mit anschliessenden klammer steht immer für eine Anweisung etwas zu tun.
-console.log(`Running on http://${HOST}:${PORT}`);7
+console.log(`Running on http://${HOST}:${PORT}`);

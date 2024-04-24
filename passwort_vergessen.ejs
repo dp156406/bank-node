@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort vergessen - MeineBank</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .create-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .create-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MeineBank</h1>
+            <img src="crop_original_bp1615890620_BlauesKreuz_Kreuz_RGB.png" alt="MeineBank Logo" width="100">
+        </header>
+        <form action="passwort_erstellt.html" method="post">
+            <input type="text" name="username_email" placeholder="Benutzername oder Email" required><br>
+            <input type="password" name="new_password" placeholder="Neues Passwort" required><br>
+            <input type="password" name="confirm_password" placeholder="Passwort bestätigen" required><br>
+            <button type="submit" class="create-btn">Erstellen</button>
+        </form>
+    </div>
+</body>
+</html>
