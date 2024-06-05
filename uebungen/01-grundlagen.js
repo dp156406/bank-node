@@ -178,5 +178,17 @@ if(geschlecht === "m" && alter >=18);{
         }
 
 
-        bei einem ASlter von"alter " Jahren zahlt eine person mit geschlecht geld
+        //bn vvvvvbbv bei einem ASlter von"alter " Jahren zahlt eine person mit geschlecht geld
              
+
+
+console.log("Aufgabe 14")
+//if, else, verknüpfen
+if (x > 50) {
+    /* do something */
+  } else if (x > 5) {
+    /* do something */
+  } else {
+    /* do something */
+  }
+  
