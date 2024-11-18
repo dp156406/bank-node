@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borken-Bank - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Der Header strukturiert die Seite -->
+    <header>
+        <!-- Überschrift der Seite -->
+        <h1>Herzlich Willkommen bei der Borken-Bank</h1>
+    </header>
+
+    <!-- Formularfelder müssen in Form-Tags eingebettet werden -->
+    <form action="/login" method="POST">
+        <!-- Die Labels beschreiben die Textboxen. -->
+        <label for="username">Benutzername</label><br>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Kennwort</label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <button type="submit">Einloggen</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        &#169; 2024 Borken-Bank AG
+    </footer>
+</body>
+</html>

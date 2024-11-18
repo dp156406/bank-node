@@ -1,65 +1,118 @@
-[12:34] Dinsing, Philip
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Hellblau */
+    background-color: #f0f8ff; /* Helleres Blau für Hintergrund */
 }
- 
+
+/* Header */
 header {
-    background-color: #42aaff; /* Dunkleres Hellblau für Header */
-    color: #fff;
+    background-color: #42aaff; /* Dunkleres Hellblau */
+    color: #ffffff;
     padding: 20px;
+    text-align: center;
 }
- 
+
 header h1 {
     margin: 0;
+    font-size: 1.8rem;
 }
- 
+
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
- 
+
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 10px;
 }
- 
+
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 1rem;
 }
- 
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 #hero {
-    background-color: #00bfff; /* Mittleres Hellblau für Hero-Sektion */
-    padding: 50px;
+    background-color: #00bfff; /* Mittleres Hellblau */
+    padding: 50px 20px;
     text-align: center;
+    color: #ffffff;
 }
- 
+
+#hero h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* About & Services Sections */
 #about, #services {
-    padding: 50px;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #333333;
+    text-align: left;
 }
- 
-footer {
-    background-color: #2e8edd; /* Dunkleres Hellblau für Footer */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+
+#about h3, #services h3 {
+    color: #2e8edd; /* Blau für Überschriften */
 }
+
+/* Flexbox Container */
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Für mobile Geräte */
+    gap: 20px;
     background-color: DodgerBlue;
-    align-items: center;
-  }
- 
-  .flex-container > div {
+    justify-content: center;
+    padding: 20px;
+}
+
+.flex-container > div {
     background-color: #f1f1f1;
-    width: 50%;
+    flex: 1 1 calc(50% - 40px); /* 50% Breite, mit Abstand */
     margin: 10px;
+    padding: 20px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-   
-  }
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #2e8edd; /* Dunkleres Blau */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .flex-container > div {
+        flex: 1 1 100%; /* Volle Breite bei kleinen Bildschirmen */
+    }
+}

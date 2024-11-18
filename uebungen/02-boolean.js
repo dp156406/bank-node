@@ -65,16 +65,16 @@ if (alter>17 && fuehrerschein === true){        //Wenn älter 17 und fuehrersche
 if(fuehrerschein)
 if(alter === 17){
     console.log("begleitet fahren")
-else{}
+{}
 }else{
-    console.log("fahrradfahren"){}
+    console.log("fahrradfahren")
 }
  
 
 let zahl = 1
 
 if(1){
-    console.log("DIe Zahl" + zahl + "nimmt den boolischen wert true an")
+    console.log("Die Zahl" + zahl + "nimmt den boolischen wert true an")
 }else{
     console.log("Die Zahl" + zahl + "nimmt den boolischen wert false an")
 }
@@ -91,10 +91,10 @@ let kontostand = 100
 if (kontostand > 0){
     console.log("zinsen berechnen")
 }else{
-    console.log("keine Zinsen da kontostand)"
-    }
+    console.log("keine Zinsen da kontostand")
+}    
 
-console.log(Aufgabe 6)
+console.log(Aufgabe6)
 
 // wenn sieg dann als 3 punkte
 // wenn niederlage dann 0 punkte
@@ -108,15 +108,16 @@ if (punkte > 0){
     console.log("verlierer")
 }
 
-if ("spielausgang == "sieg){
+if (spielausgang == "sieg")
+    {
     console.log("es gibt 3 punkte")
 }
 
-if ("spielausgang == "unentschieden){
+if (spielausgang == "unentschieden"){
     console.log("es gibt 1 punkte")
 }
 
-if ("spielausgang == "niederlage){
+if (spielausgang == "niederlage"){
     console.log("es gibt 0 punkte")
 }
 require ()
